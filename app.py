@@ -17,6 +17,7 @@ def generate_video(ref_img, ref_audio,settings_face_expand_ratio=1.2, setting_st
         os.makedirs("output")
 
     output_video = f"output/{timestamp}.mp4"
+    print('output_video', output_video)
 
     # Determine the command based on the operating system
     if platform.system() == "Windows":
